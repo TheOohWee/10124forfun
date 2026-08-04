@@ -107,6 +107,29 @@
         .semester:nth-child(2) { animation-delay: 0.15s; }
         .semester:nth-child(3) { animation-delay: 0.3s; }
 
+        /* Centered year-group header with a short accent underline */
+        .year-header {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #1d1d1f;
+            margin: 3rem 0 1.5rem;
+            animation: fadeUp 0.8s ease-out both;
+        }
+
+        .year-header:first-child { margin-top: 0; }
+
+        .year-header::after {
+            content: '';
+            display: block;
+            width: 42px;
+            height: 3px;
+            margin: 0.7rem auto 0;
+            border-radius: 2px;
+            background: linear-gradient(90deg, #0071e3, #5ac8fa);
+        }
+
         .semester-label {
             font-size: 0.75rem;
             font-weight: 600;
@@ -225,9 +248,12 @@
 
     <section class="semesters">
 
+        <!-- ============ SOPHOMORE YEAR ============ -->
+        <h2 class="year-header">Sophomore Year</h2>
+
         <!-- Fall 2026 — Sophomore Fall (Upcoming) -->
         <div class="semester">
-            <p class="semester-label">Fall 2026 — Sophomore Year</p>
+            <p class="semester-label">Fall 2026</p>
 
             <div class="class-card">
                 <div class="class-icon" style="background: #e8eaf6;">
@@ -319,9 +345,12 @@
             </div>
         </div>
 
+        <!-- ============ FRESHMAN YEAR ============ -->
+        <h2 class="year-header">Freshman Year</h2>
+
         <!-- Spring 2026 — Freshman Spring -->
         <div class="semester">
-            <p class="semester-label">Spring 2026 — Freshman Year</p>
+            <p class="semester-label">Spring 2026</p>
 
             <div class="class-card">
                 <div class="class-icon" style="background: #e8eaf6;">
@@ -413,7 +442,7 @@
 
         <!-- Fall 2025 — Freshman Fall -->
         <div class="semester">
-            <p class="semester-label">Fall 2025 — Freshman Year</p>
+            <p class="semester-label">Fall 2025</p>
 
             <div class="class-card">
                 <div class="class-icon" style="background: #e0f7fa;">
